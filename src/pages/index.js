@@ -13,9 +13,9 @@ const IndexPage = () => (
       justifyContent: "space-between",
       flexWrap: "wrap"
     }}>
-      <Card title="Curso de Interpretação I" date="01/01/2020" />
-      <Card title="Curso de Interpretação II" date="01/01/2020" />
-      <Card title="Curso de Interpretação II" date="01/01/2020" />
+      <Card title="Interpretação I" date="01/01/2020" teacher="Leonardo Lemos"/>
+      <Card title="Interpretação II" date="01/01/2020" teacher="Elmer Baumgratz"/>
+      <Card title="Interpretação II" date="01/01/2020" teacher="Nina Alves"/>
     </div>
   </Layout>
 )

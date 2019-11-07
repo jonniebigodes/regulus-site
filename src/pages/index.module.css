@@ -1,0 +1,11 @@
+.formacao {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    max-width: 640px;
+    margin: auto;
+}
+
+.formacao > p {
+    text-align: justify;
+}

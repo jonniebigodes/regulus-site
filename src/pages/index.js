@@ -27,9 +27,9 @@ Temos Tarôs nacionais e importados (US Games / Lo Scarabeo / etc)</p>
     <div className={styles.sessao}>
       <h2>Localização</h2>
       <p>Rua Estela, 515 cj.71 - Bl. E - próximo ao Metrô Paraíso</p>
-      <iframe width="600" height="450" frameborder="0" style={{border: 0}} src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsWC2m5FZzpQRndvYvoxUM08&key=AIzaSyA9pQxGOAOAkZz5mu5kT0BFRghJ1Cqt478" allowfullscreen></iframe> 
+      <iframe width="100%" height="300" frameborder="0" style={{border: 0}} src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsWC2m5FZzpQRndvYvoxUM08&key=AIzaSyA9pQxGOAOAkZz5mu5kT0BFRghJ1Cqt478" allowfullscreen></iframe> 
       <p>São Paulo/SP | 04011-904</p>
-      <p>fone: (11)5549-2655 (14h~19h) | astrologia@regulus.com.br</p>
+      <span>fone: (11)5549-2655 (14h~19h) | astrologia@regulus.com.br</span>
     </div>
   </Layout>
 )

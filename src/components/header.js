@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <img src={logo} alt="Regulus Astrologia" style={{width: "32px", margin:"0 5px"}}/>
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0, fontWeight: "normal" }}>
         <Link
           to="/"
           style={{

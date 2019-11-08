@@ -9,3 +9,17 @@
 .formacao > p {
     text-align: justify;
 }
+
+.botao {
+    border:1px solid #011830;
+    color:#011830;
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color:#011830;
+    color:white;
+    border-radius: 10px;
+}

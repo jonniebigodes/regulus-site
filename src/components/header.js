@@ -14,23 +14,25 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 0`,
+        padding: `0.45rem 0 `,
         display: "flex",
         alignItems: "center"
       }}
     >
-      <img src={logo} alt="Regulus Astrologia" style={{width: "32px", margin:"0 5px"}}/>
-      <h1 style={{ margin: 0, fontWeight: "normal" }}>
-        <Link
+      <Link
           to="/"
           style={{
             color: `white`,
             textDecoration: `none`,
+            margin: `0 auto`,
+            display: "flex",
+            flexFlow: "column",
+            alignItems: "center"
           }}
         >
-          {siteTitle}
+          <img src={logo} alt="Regulus Astrologia" style={{width: "48px", margin:"0 5px"}}/>
+          <h1 style={{fontWeight: "lighter", margin: 0}}>{siteTitle}</h1>
         </Link>
-      </h1>
     </div>
   </header>
 )

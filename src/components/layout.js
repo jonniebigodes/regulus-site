@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={"Regulus Astrologia"} />
+      <Header siteTitle={"REGULUS"} />
       <div
         style={{
           margin: `0 auto`,

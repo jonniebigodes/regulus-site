@@ -19,8 +19,8 @@ const IndexPage = () => (
     <div className={styles.sessao}>
       <h2>Livraria</h2>
       <p>A Livraria da Regulus nasceu da necessidade de atender os alunos dos cursos de Astrologia. Hoje a Livraria física possui um dos maiores acervos de títulos sobre Astrologia, incluído muitos títulos esgotados e raros.
-Trabalhamos com livros nacionais e importados.
-Temos Tarôs nacionais e importados (US Games / Lo Scarabeo / etc)</p>
+Trabalhamos com livros nacionais e importados.</p>
+    <p>Temos Tarôs nacionais e importados (US Games / Lo Scarabeo / etc)</p>
       <a href="http://www.livrariadaregulus.com.br" target="_blank" rel="noopener noreferrer" className={styles.botao}>Visite nossa livraria</a>
     </div>
     <Formacao />

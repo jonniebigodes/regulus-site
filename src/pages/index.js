@@ -29,7 +29,6 @@ Trabalhamos com livros nacionais e importados.</p>
       <p>Rua Estela, 515 cj.71 - Bl. E - próximo ao Metrô Paraíso</p>
       <iframe width="100%" height="300" frameborder="0" style={{border: 0}} src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsWC2m5FZzpQRndvYvoxUM08&key=AIzaSyA9pQxGOAOAkZz5mu5kT0BFRghJ1Cqt478" allowfullscreen></iframe> 
       <p>São Paulo/SP | 04011-904</p>
-      <span>fone: (11)5549-2655 (14h~19h) | astrologia@regulus.com.br</span>
     </div>
   </Layout>
 )

@@ -10,19 +10,17 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Header from "./header"
 import "./layout.css"
+import Footer from "./footer"
 
 library.add(fab, faInstagram);
 
 
 
 const Layout = ({ children }) => {
-  const socialMediaStyle = {
-    margin: '0 15px'
-  }
+  
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -47,24 +45,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
-      <footer 
-          style={{
-            backgroundColor: "#011830",
-            color: "white",
-            textAlign: "center",
-            padding: "10px"
-          }}>
-            <div style={{
-            }}>
-              <a href="https://www.instagram.com/regulus.astrologia" 
-                target="_blank" rel="noopener noreferrer" style={socialMediaStyle}>
-                <FontAwesomeIcon icon={["fab", "instagram"]} style={{color:"white"}} size={"2x"}></FontAwesomeIcon>
-              </a>
-              <a href="https://www.facebook.com/regulus.cursos" target="_blank" rel="noopener noreferrer" style={socialMediaStyle}>
-                <FontAwesomeIcon icon={["fab", "facebook-square"]} style={{color:"white"}} size={"2x"}></FontAwesomeIcon>
-              </a>
-            </div>
-        </footer>
+      <Footer />
     </>
   )
 }

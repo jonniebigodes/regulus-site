@@ -1,0 +1,11 @@
+.footer{
+    background-color: #011830;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.email, .telefone{
+    text-decoration: none;
+    color: white;
+}

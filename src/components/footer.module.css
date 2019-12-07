@@ -5,6 +5,10 @@
     padding: 10px;
 }
 
+.footer > div {
+    margin-bottom: 5px;
+}
+
 .email, .telefone{
     text-decoration: none;
     color: white;

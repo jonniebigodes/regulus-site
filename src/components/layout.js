@@ -10,12 +10,13 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faCalendarAlt, faClock, faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons'
 
 import Header from "./header"
 import "./layout.css"
 import Footer from "./footer"
 
-library.add(fab, faInstagram);
+library.add(fab, faInstagram, faCalendarAlt, faClock, faChalkboardTeacher);
 
 
 

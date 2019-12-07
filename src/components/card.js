@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "./card.module.css" 
+import { navigate } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Card = ({title, date, time, teacher}) => {
@@ -10,7 +11,7 @@ const Card = ({title, date, time, teacher}) => {
             <p><FontAwesomeIcon icon={["fa","clock"]} fixedWidth={true}></FontAwesomeIcon> {time}</p>
             <p><FontAwesomeIcon icon={["fa","chalkboard-teacher"]} fixedWidth={true}></FontAwesomeIcon> {teacher}</p>
         </div>
-        <div className={styles.cardBottom}>
+        <div className={styles.cardBottom} onClick={() => navigate("/curso")}>
             Mais informações
         </div>
         

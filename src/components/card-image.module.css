@@ -1,0 +1,28 @@
+.card {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    width: 300px;
+    margin: 10px auto;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-height: 168px;
+}
+
+p {
+    margin-bottom: unset;
+    line-height: normal;
+}
+
+.main {
+    padding: 20px
+}
+
+.cardBottom {
+    padding: 0 10px 10px 10px;
+    font-size: 12px;
+}
+

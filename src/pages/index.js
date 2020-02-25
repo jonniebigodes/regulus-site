@@ -5,13 +5,31 @@ import SEO from "../components/seo"
 import Formacao from "../components/formacao"
 import Localizacao from "../components/localizacao"
 import Livraria from "../components/livraria"
+import {CardImage} from "../components/card-image"
 import { Link } from "gatsby"
 import styles from "./index.module.css"
+import livraria from "../images/livraria.jpg"
+import sala from "../images/sala.png"
+
+const estiloCards = {
+  display: "flex",
+  justifyContent: "space-between",
+  flexWrap: "wrap"
+};
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className={styles.sessao}>
+    <div style={estiloCards}>
+      <CardImage 
+        text="A Livraria da Regulus possui um dos maiores acervos de títulos sobre Astrologia, incluído muitos títulos esgotados e raros."
+        image={livraria} />
+      <CardImage 
+        text="As reservas para os cursos podem ser feitas por telefone (11) 5549-2655 após 14h, por e-mail (astrologia@regulus.com.br)  informando o curso e um telefone de contato ou pessoalmente."
+        image={sala} />
+    </div>
+   
+    {/* <div className={styles.sessao}>
       <h2>Programação de cursos</h2>
       <p>As reservas para os cursos podem ser feitas por telefone (11) 5549-2655 após 14h, por e-mail (astrologia@regulus.com.br)  informando o curso e um telefone de contato ou pessoalmente.</p>
       <Link to="/cursos" className={styles.botao}>Veja turmas abertas</Link>
@@ -23,7 +41,7 @@ const IndexPage = () => (
 Trabalhamos com livros nacionais e importados.</p>
     <p>Temos Tarôs nacionais e importados (US Games / Lo Scarabeo / etc)</p>
       <a href="http://www.livrariadaregulus.com.br" target="_blank" rel="noopener noreferrer" className={styles.botao}>Visite nossa livraria</a>
-    </div>
+    </div> */}
     <div className={styles.sessao}>
       <h2>Formação Astrológica</h2>
       <p>Concluindo a parte básica, escolha a melhor forma de estudar Astrologia, monte sua grade curricular. Atingindo a carga horária mínima, o aluno poderá solicitar seu certificado de Formação em Astrologia.Mesmo não tendo cursado os módulos iniciais na Regulus, poderá frequentar nossos cursos ou escolher determinado módulo ou especialização que desejar.Todos os cursos/módulos/workshop fazem parte do curso livre de Formação em Astrologia, somando horas para a obtenção do Certificado de Formação em Astrologia.</p>

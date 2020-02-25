@@ -16,7 +16,7 @@ export const CardImage = (props: Props) => {
                 <div className={styles.cardBottom}>
                     <p>{props.text}</p>
                 </div>
-                <div style={{display: "flex", justifyContent:"end", paddingRight:"5px", paddingBottom:"5px"}}>
+                <div style={{display: "flex", justifyContent:"flex-end", paddingRight:"5px", paddingBottom:"5px"}}>
                     <FontAwesomeIcon icon={["fas","arrow-circle-right"]} fixedWidth={true}></FontAwesomeIcon>
                 </div> 
             </div>

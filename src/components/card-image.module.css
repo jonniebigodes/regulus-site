@@ -4,6 +4,8 @@
     margin: 10px auto;
     /* border-radius: 8px; */
     cursor: pointer;
+    position: relative;
+    min-height: 250px;
 }
 
 .card:hover {
@@ -27,6 +29,6 @@ p {
 
 .cardBottom {
     padding: 0 10px 10px 10px;
-    font-size: 12px;
+    font-size: 14px;
 }
 

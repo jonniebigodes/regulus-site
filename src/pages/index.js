@@ -26,11 +26,13 @@ const IndexPage = () => (
     <CardImage 
         text="Veja os workshops programados e garanta sua vaga!"
         title="Workshops"
-        image={workshop} />
+        image={workshop}
+        navigateTo="/cursos" />
       <CardImage 
         text="Veja nossas turmas com vagas abertas!"
         title="Cursos"
-        image={sala} />
+        image={sala}
+        navigateTo="/cursos" />
       <CardImage 
         text="A Livraria da Regulus possui um dos maiores acervos de títulos sobre Astrologia, incluído muitos títulos esgotados e raros."
         title="Livraria"
@@ -38,7 +40,8 @@ const IndexPage = () => (
       <CardImage 
         text="Confira nossa grade curricular!"
         title="Formação"
-        image={formacao} />
+        image={formacao}
+        navigateTo="/formacao" />
     </div>
    
     {/* <div className={styles.sessao}>

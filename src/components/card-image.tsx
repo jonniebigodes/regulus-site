@@ -1,4 +1,5 @@
 import React from "react"
+import { navigate } from "gatsby"
 import styles from "./card-image.module.css" 
 import livraria from "../images/livraria.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -6,7 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 interface Props {
     image,
     text: string,
-    title: string
+    title: string,
+    navigateTo: string
 }
 
 const estiloDiv = {
@@ -24,7 +26,7 @@ const estiloDiv = {
 }
 
 export const CardImage = (props: Props) => {
-    return <div className={styles.card}> 
+    return <div className={styles.card} onClick={() => navigate(props.navigateTo)}> 
                 <div style={{position: "relative"}}>
                     <div style={estiloDiv}>
                         <p>{props.title}</p>
@@ -34,7 +36,7 @@ export const CardImage = (props: Props) => {
                 <div className={styles.cardBottom}>
                     <p>{props.text}</p>
                 </div>
-                <div style={{display: "flex", justifyContent:"flex-end", paddingRight:"5px", paddingBottom:"5px"}}>
+                <div style={{display: "flex", justifyContent:"flex-end", paddingRight:"5px", paddingBottom:"5px", position: "absolute", bottom:"0px", right:"0px"}}>
                     <FontAwesomeIcon icon={["fas","arrow-circle-right"]} size="lg"></FontAwesomeIcon>
                 </div> 
             </div>

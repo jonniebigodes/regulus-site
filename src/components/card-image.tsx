@@ -5,12 +5,30 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 interface Props {
     image,
-    text: string
+    text: string,
+    title: string
+}
+
+const estiloDiv = {
+    backgroundColor: "#011830",
+    opacity: "0.8",
+    position: "absolute",
+    bottom: "5px",
+    width: "35%",
+    borderTopRightRadius: "8px",
+    borderBottomRightRadius: "8px",
+        
+    color: "white",
+
+    padding: "5px",
 }
 
 export const CardImage = (props: Props) => {
     return <div className={styles.card}>
-                <div>
+                <div style={{position: "relative"}}>
+                    <div style={estiloDiv}>
+                        <p>{props.title}</p>
+                    </div>
                     <img src={props.image} alt="" style={{margin:0, width:"100%"}}/>
                 </div>
                 <div className={styles.cardBottom}>

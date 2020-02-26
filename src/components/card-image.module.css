@@ -2,13 +2,17 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     width: 300px;
     margin: 10px auto;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     cursor: pointer;
 }
 
+.card:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.30), 0 3px 6px rgba(0,0,0,0.30);
+}
+
 img {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    /* border-top-left-radius: 8px;
+    border-top-right-radius: 8px; */
     max-height: 168px;
 }
 

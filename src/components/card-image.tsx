@@ -13,10 +13,10 @@ const estiloDiv = {
     backgroundColor: "#011830",
     opacity: "0.8",
     position: "absolute",
-    bottom: "5px",
+    bottom: "5px", 
     width: "35%",
-    borderTopRightRadius: "8px",
-    borderBottomRightRadius: "8px",
+    // borderTopRightRadius: "8px",
+    // borderBottomRightRadius: "8px",
         
     color: "white",
 
@@ -24,7 +24,7 @@ const estiloDiv = {
 }
 
 export const CardImage = (props: Props) => {
-    return <div className={styles.card}>
+    return <div className={styles.card}> 
                 <div style={{position: "relative"}}>
                     <div style={estiloDiv}>
                         <p>{props.title}</p>
@@ -35,7 +35,7 @@ export const CardImage = (props: Props) => {
                     <p>{props.text}</p>
                 </div>
                 <div style={{display: "flex", justifyContent:"flex-end", paddingRight:"5px", paddingBottom:"5px"}}>
-                    <FontAwesomeIcon icon={["fas","arrow-circle-right"]} fixedWidth={true}></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={["fas","arrow-circle-right"]} size="lg"></FontAwesomeIcon>
                 </div> 
             </div>
 }

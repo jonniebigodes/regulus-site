@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import {Menu} from "./menu"
 import logo from "../images/logo_regulus.png";
 
 const Header = ({ siteTitle }) => (
@@ -8,6 +9,8 @@ const Header = ({ siteTitle }) => (
     style={{
       background: `#011830`,
       marginBottom: `1.45rem`,
+      display: "flex",
+      alignItems: "center"
     }}
   >
     <div
@@ -34,6 +37,10 @@ const Header = ({ siteTitle }) => (
           <h1 style={{fontWeight: "lighter", margin: 0}}>{siteTitle}</h1>
         </Link>
     </div>
+    <div style={{paddingRight: "10px"}}>
+      <Menu />
+    </div> 
+    
   </header>
 )
 

@@ -9,7 +9,8 @@ const Header = ({ siteTitle }) => (
     style={{
       background: `#011830`,
       marginBottom: `1.45rem`,
-      display: "flex",
+      display: "grid",
+      gridTemplateColumns: "1fr 2fr 1fr ",
       alignItems: "center"
     }}
   >
@@ -18,7 +19,7 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `0.45rem 0 `,
-        display: "flex",
+        gridColumnStart: 2,
         alignItems: "center"
       }}
     >
@@ -37,7 +38,7 @@ const Header = ({ siteTitle }) => (
           <h1 style={{fontWeight: "lighter", margin: 0}}>{siteTitle}</h1>
         </Link>
     </div>
-    <div style={{paddingRight: "10px"}}>
+    <div style={{margin: "auto"}}>
       <Menu />
     </div> 
     

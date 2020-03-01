@@ -6,6 +6,7 @@
     left:0;
     top:0;
     z-index:100;
+    animation:show-animation 0.5s ease-out;
 }
 
 .menuContainer {
@@ -20,4 +21,23 @@
     text-decoration: underline;
     color: white;
     font-size: 22px;
+}
+
+.closeIcon {
+    animation:spin 0.3s linear;
+    animation-delay: 0.2s;
+    animation-iteration-count: 1;
+}
+
+/* @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } } */
+/* @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } } */
+@keyframes spin { 100% { -webkit-transform: rotate(180deg); transform:rotate(180deg); } }
+
+@keyframes show-animation {
+    0% {
+        left: 100vw
+    }
+
+
+    100% { left: 0}
 }

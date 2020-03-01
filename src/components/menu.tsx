@@ -15,6 +15,7 @@ export const Menu = () => {
                     size="2x"
                     color="orange"
                     style={{cursor: "pointer"}}
+                    className={styles.closeIcon}
                     onClick={() => toggleExpansion(!isExpanded)} />
                 <ul style={{listStyle: "none", margin: 0, textAlign: "center", paddingTop: "20px"}}>
                     <li><Link to="/" onClick={closeMenu} className={styles.menuItem}>Home</Link></li>
@@ -25,7 +26,7 @@ export const Menu = () => {
         </div> : 
         <FontAwesomeIcon 
             icon={["fas","bars"]} 
-            size="lg"
+            size="2x"
             color="orange"
             style={{cursor: "pointer"}}
             onClick={() => toggleExpansion(!isExpanded)} />

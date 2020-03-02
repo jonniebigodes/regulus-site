@@ -12,8 +12,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Regulus | Escola de Astrologia`,
+        short_name: `Regulus Astrologia`,
         start_url: `/`,
         background_color: `#011830`,
         theme_color: `#011830`,

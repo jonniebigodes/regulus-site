@@ -7,7 +7,6 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faCalendarAlt, faClock, faChalkboardTeacher, faArrowCircleRight, faBars , faTimes} from '@fortawesome/free-solid-svg-icons'
@@ -22,17 +21,6 @@ library.add(fab, faInstagram, faCalendarAlt, faClock, faChalkboardTeacher, faArr
 
 const Layout = ({ children }) => {
   
-
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <Header siteTitle={"REGULUS"} />

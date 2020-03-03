@@ -30,6 +30,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     result.data.allCursosJson.edges.forEach(edge => {
         console.log(edge)
+        console.log(edge.node.nome)
         // Gatsby uses Redux to manage its internal state.
         // Plugins and sites can use functions like "createPage"
         // to interact with Gatsby.

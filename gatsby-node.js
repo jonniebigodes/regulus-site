@@ -29,7 +29,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const cursoTemplate = path.resolve(`src/templates/curso.js`)
 
     result.data.allCursosJson.edges.forEach(edge => {
-        console.log(edge);
         // Gatsby uses Redux to manage its internal state.
         // Plugins and sites can use functions like "createPage"
         // to interact with Gatsby.
